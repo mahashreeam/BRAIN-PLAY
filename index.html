@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain Play - Interactive Learning Games</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+      color: #333;
+    }
+
+    header {
+      background-color: #4B39D1;
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+      background-image: url('https://www.example.com/header-background.jpg'); /* Replace with a relevant image */
+      background-size: cover;
+      background-position: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.5em;
+      font-weight: 600;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+      background-color: #2F27A1;
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 380px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #4B39D1;
+      color: white;
+    }
+
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5em;
+      margin: 40px 0;
+      color: #4B39D1;
+      text-transform: uppercase;
+    }
+
+    .about, .games, .testimonials, .contact {
+      margin-bottom: 60px;
+    }
+
+    .about img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .testimonial {
+      font-style: italic;
+      color: #555;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-left: 5px solid #4B39D1;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial p {
+      font-size: 1.1em;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    .container {
+  text-align: center; /* Centers text within the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  max-width: 800px; /* Optional: Limit max-width for responsive design */
+}
+
+.center-image {
+  display: block; /* Ensures the image appears as a block-level element */
+  margin: 0 auto; /* Centers the image horizontally */
+  max-width: 100%; /* Keeps image responsive */
+  border-radius: 10px; /* Optional: Style your image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for visual appeal */
+}
+
+
+    .contact-form button {
+      background-color: #4B39D1;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #2F27A1;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to Brain Play</h1>
+    <p>Interactive learning games for everyone!</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#games">Games</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- About Section -->
+    <div class="about" id="about">
+      <h2 class="section-title">About Brain Play</h2>
+      <p>Brain Play is all about making learning exciting and interactive. Our platform offers a variety of games designed to engage people of all ages in fun and educational experiences. Whether you're a student, teacher, or parent, Brain Play provides tools to make learning enjoyable!</p>
+      <img src="brain.jpg" class="center-image" alt="About Brain Play"> <!-- Replace with an image that reflects your brand -->
+    </div>
+
+    <!-- Games Section -->
+    <div class="games" id="games">
+      <h2 class="section-title">Featured Games</h2>
+      <div class="grid">
+        <iframe 
+          src="https://wordwall.net/embed/251ec359d9664677aacb8cb9fe31c05c?themeId=62&templateId=70&fontStackId=0" 
+          allowfullscreen>
+        </iframe>
+        <iframe 
+          src="https://wordwall.net/embed/6387fa94d4924e6a81ccd527e23a1f22?themeId=2&templateId=10&fontStackId=0"
+          allowfullscreen>
+        </iframe>
+        <iframe 
+          src="https://wordwall.net/embed/6db32660979140e48a3c378526212e30?themeId=1&templateId=3&fontStackId=0"
+          allowfullscreen>
+        </iframe>
+        <iframe 
+          src="https://wordwall.net/embed/724d8011b9d3419fabac6db505eb3418?themeId=45&templateId=72&fontStackId=0" 
+          allowfullscreen>
+        </iframe>
+        <iframe 
+          src="https://wordwall.net/embed/374800b74b2f40228cca9348481eb9ae?themeId=1&templateId=3&fontStackId=0" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials" id="testimonials">
+      <h2 class="section-title">What Our Users Say</h2>
+      <div class="testimonial">
+        <p>"Brain Play has transformed my classroom! My students love the interactive games, and it's an excellent way to keep them engaged while learning."</p>
+        <p>- Sarah, Teacher</p>
+      </div>
+      <div class="testimonial">
+        <p>"As a parent, I appreciate how Brain Play has made learning fun for my kids. It's educational and entertaining, which is a win-win!"</p>
+        <p>- Mike, Parent</p>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+     <div class="contact" id="contact">
+     <h2 class="section-title">
+
+    <form method="POST" id="form">
+      <input type="hidden" name="access_key" value="267453a4-1569-4e93-b641-0e357cd49cca">
+
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+      <label for="message">Feedback</label>
+      <textarea name="message" id="message" rows="4" placeholder="Write your feedback here..." required></textarea>
+
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+      <button type="submit">Submit Form</button>
+
+      <div id="result"></div>
+  </form>
+
+  <script>
+      const form = document.getElementById('form');
+      const result = document.getElementById('result');
+
+      form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const formData = new FormData(form);
+          const object = Object.fromEntries(formData);
+          const json = JSON.stringify(object);
+          result.innerHTML = "Please wait...";
+
+          fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json'
+              },
+              body: json
+          })
+              .then(async (response) => {
+                  let json = await response.json();
+                  if (response.status == 200) {
+                      result.innerHTML = "<span style='color: green;'>Form submitted successfully!</span>";
+                  } else {
+                      console.log(response);
+                      result.innerHTML = `<span style='color: red;'>${json.message}</span>`;
+                  }
+              })
+              .catch(error => {
+                  console.log(error);
+                  result.innerHTML = "<span style='color: red;'>Something went wrong!</span>";
+              })
+              .then(function () {
+                  form.reset();
+                  setTimeout(() => {
+                      result.style.display = "none";
+                  }, 3000);
+              });
+      });
+  </script>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Brain Play. All Rights Reserved.</p>
+    <p>Visit our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
+  </footer>
+
+</body>
+</html>
